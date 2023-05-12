@@ -136,6 +136,13 @@ p {
     letter-spacing: 1px;
     font-weight: 400;
 }
+ol {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
 
 .subtitle {
     display: inline-block;
@@ -315,6 +322,10 @@ button {
 }
 
 /* 4 Services */
+.services_wrapper a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
 .services_wrapper .card {
     background-color: var(--bg-dark-blue);
     cursor: pointer;
