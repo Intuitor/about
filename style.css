@@ -404,3 +404,9 @@ button {
 .footer_wrapper .copyright-text a {
     color: var(--primary-color);
 }
+
+.project_wrapper{
+    margin: 70px 10px 20px 10px;
+
+    text-align: justify;
+}
