@@ -57,8 +57,8 @@
         </nav>
     </header>
     <!-- Navbar section exit -->
-    <section id="project">
-        <div class="container mt-4">
+    <section id="project" class="project_wrapper">
+        <div class="container">
             <h1 class="text-center">Projects</h1>
             <h3>Motivation:</h3>
             <p><b>Efficient Storage:</b> Number plate images captured at traffic signals need to be stored for various
@@ -78,7 +78,7 @@
 
                 <li> Singular values are the diagonal elements of the matrix obtained during the SVD decomposition of a
                     matrix.
-                    For a given matrix A, the singular value decomposition can be represented as A = UΣV^T, where U and
+                    For a given matrix A, the singular value decomposition can be represented as A = UΣV<sup>T</sup>, where U and
                     V
                     are
                     orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
@@ -94,7 +94,7 @@
 
             <h3>Singular Value Decomposition:</h3>
 
-            <p>SVD decomposes a matrix A into three matrices: U, Σ, and V^T. Mathematically, A = UΣV^T, where U and V
+            <p>SVD decomposes a matrix A into three matrices: U, Σ, and V<sup>T</sup>. Mathematically, A = UΣV<sup>T</sup>, where U and V
                 are
                 orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
 
@@ -124,15 +124,15 @@
 
             <h3>Algorithm to finding SVD:</h3>
             <ol> Let A in Mn×d,
-               <li>Find AA^T or A^T A.</li>
-               <li>Decompose AAT or AT A by Eigen-value decomposition, <br>
+               <li>Find AA<sup>T</sup> or A<sup>T</sup> A.</li>
+               <li>Decompose AA<sup>T</sup> or A<sup>T</sup> A by Eigen-value decomposition, <br>
                 i.e. find characteristic value and normalized characteristic
-                vector of AAT or AT A.</li>
+                vector of AA<sup>T</sup> or A<sup>T</sup> A.</li>
                 <li>Construct Σ by using square root of characteristic value of
-                AAT or AT A.</li>
-                <li>Construct U or V T by characteristic vector of AAT or AT A
+                AA<sup>T</sup> or A<sup>T</sup> A.</li>
+                <li>Construct U or V<sup>T</sup> by characteristic vector of AA<sup>T</sup> or A<sup>T</sup> A
                 respectively.</li>
-                <li>Use A = UΣV T to obtain missing matrix.</li>
+                <li>Use A = UΣV<sup>T</sup> to obtain missing matrix.</li>
             </ol>
         </div>
     </section>
