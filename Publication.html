@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img decoding="async" src="logo.png" class="img-fluid" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="index.html#contact">Hire Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+    <section id="project" class="project_wrapper">
+        <div class="container">
+            <h1 class="text-center">Projects</h1>
+            <h3>Motivation:</h3>
+            <p><b>Efficient Storage:</b> Number plate images captured at traffic signals need to be stored for various
+                purposes, such as traffic monitoring, law enforcement, or investigations. Since a large number of number
+                plate images are captured every day, efficient storage becomes crucial. SVD-based compression techniques
+                can significantly reduce the storage requirements by representing the image using fewer singular values,
+                without significant loss in visual quality.
+            </p><br>
+
+            <h3>Technical terms:</h3>
+            <ol>
+                <li><b>Matrix:</b> A matrix is a two-dimensional array of numbers arranged in rows and columns. In the
+                    context of image
+                    compression using SVD, an image can be represented as a matrix where each element corresponds to a
+                    pixel
+                    value.</li><br>
+
+                <li> Singular values are the diagonal elements of the matrix obtained during the SVD decomposition of a
+                    matrix.
+                    For a given matrix A, the singular value decomposition can be represented as A = UΣV<sup>T</sup>, where U and
+                    V
+                    are
+                    orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
+
+                    Singular values are non-negative and sorted in descending order on the diagonal of the Σ matrix. The
+                    first
+                    singular value is the largest, followed by the second, and so on. The magnitude of the singular
+                    values
+                    indicates the relative importance of each singular vector in capturing the information present in
+                    the
+                    matrix.</li>
+            </ol><br>
+
+            <h3>Singular Value Decomposition:</h3>
+
+            <p>SVD decomposes a matrix A into three matrices: U, Σ, and V<sup>T</sup>. Mathematically, A = UΣV<sup>T</sup>, where U and V
+                are
+                orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
+
+                In Matlab we can perform Singular Value Decomposition using 'svd' function. Here's an example of MATLAB
+                code
+                for performing Singular Value Decomposition (SVD) on a matrix: <br><br>
+
+
+                % Example matrix <br>
+                A = [1, 2, 3; 4, 5, 6; 7, 8, 9]; <br>
+
+                % SVD decomposition <br>
+                [U, S, V] = svd(A); <br>
+
+                % U: Left singular vectors <br>
+                disp("Left singular vectors (U):"); <br>
+                disp(U); <br>
+
+                % S: Singular values <br>
+                disp("Singular values (S):"); <br>
+                disp(S); <br>
+
+                % V: Right singular vectors <br>
+                disp("Right singular vectors (V):"); <br>
+                disp(V);
+            </p>
+
+            <h3>Algorithm to finding SVD:</h3>
+            <ol> Let A in Mn×d,
+               <li>Find AA<sup>T</sup> or A<sup>T</sup> A.</li>
+               <li>Decompose AA<sup>T</sup> or A<sup>T</sup> A by Eigen-value decomposition, <br>
+                i.e. find characteristic value and normalized characteristic
+                vector of AA<sup>T</sup> or A<sup>T</sup> A.</li>
+                <li>Construct Σ by using square root of characteristic value of
+                AA<sup>T</sup> or A<sup>T</sup> A.</li>
+                <li>Construct U or V<sup>T</sup> by characteristic vector of AA<sup>T</sup> or A<sup>T</sup> A
+                respectively.</li>
+                <li>Use A = UΣV<sup>T</sup> to obtain missing matrix.</li>
+            </ol>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 copyright-text text-center mb-3 mb-lg-0">
+                    <p class="mb-0">Copyright © 2023 <a href="#">Ravi Suthar</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
