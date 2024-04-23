@@ -59,81 +59,8 @@
     <!-- Navbar section exit -->
     <section id="project" class="project_wrapper">
         <div class="container">
-            <h1 class="text-center">Projects</h1>
-            <h3>Motivation:</h3>
-            <p><b>Efficient Storage:</b> Number plate images captured at traffic signals need to be stored for various
-                purposes, such as traffic monitoring, law enforcement, or investigations. Since a large number of number
-                plate images are captured every day, efficient storage becomes crucial. SVD-based compression techniques
-                can significantly reduce the storage requirements by representing the image using fewer singular values,
-                without significant loss in visual quality.
-            </p><br>
+            <h1 class="text-center">Publications</h1>
 
-            <h3>Technical terms:</h3>
-            <ol>
-                <li><b>Matrix:</b> A matrix is a two-dimensional array of numbers arranged in rows and columns. In the
-                    context of image
-                    compression using SVD, an image can be represented as a matrix where each element corresponds to a
-                    pixel
-                    value.</li><br>
-
-                <li> Singular values are the diagonal elements of the matrix obtained during the SVD decomposition of a
-                    matrix.
-                    For a given matrix A, the singular value decomposition can be represented as A = UΣV<sup>T</sup>, where U and
-                    V
-                    are
-                    orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
-
-                    Singular values are non-negative and sorted in descending order on the diagonal of the Σ matrix. The
-                    first
-                    singular value is the largest, followed by the second, and so on. The magnitude of the singular
-                    values
-                    indicates the relative importance of each singular vector in capturing the information present in
-                    the
-                    matrix.</li>
-            </ol><br>
-
-            <h3>Singular Value Decomposition:</h3>
-
-            <p>SVD decomposes a matrix A into three matrices: U, Σ, and V<sup>T</sup>. Mathematically, A = UΣV<sup>T</sup>, where U and V
-                are
-                orthogonal matrices, and Σ is a diagonal matrix containing the singular values.
-
-                In Matlab we can perform Singular Value Decomposition using 'svd' function. Here's an example of MATLAB
-                code
-                for performing Singular Value Decomposition (SVD) on a matrix: <br><br>
-
-
-                % Example matrix <br>
-                A = [1, 2, 3; 4, 5, 6; 7, 8, 9]; <br>
-
-                % SVD decomposition <br>
-                [U, S, V] = svd(A); <br>
-
-                % U: Left singular vectors <br>
-                disp("Left singular vectors (U):"); <br>
-                disp(U); <br>
-
-                % S: Singular values <br>
-                disp("Singular values (S):"); <br>
-                disp(S); <br>
-
-                % V: Right singular vectors <br>
-                disp("Right singular vectors (V):"); <br>
-                disp(V);
-            </p>
-
-            <h3>Algorithm to finding SVD:</h3>
-            <ol> Let A in Mn×d,
-               <li>Find AA<sup>T</sup> or A<sup>T</sup> A.</li>
-               <li>Decompose AA<sup>T</sup> or A<sup>T</sup> A by Eigen-value decomposition, <br>
-                i.e. find characteristic value and normalized characteristic
-                vector of AA<sup>T</sup> or A<sup>T</sup> A.</li>
-                <li>Construct Σ by using square root of characteristic value of
-                AA<sup>T</sup> or A<sup>T</sup> A.</li>
-                <li>Construct U or V<sup>T</sup> by characteristic vector of AA<sup>T</sup> or A<sup>T</sup> A
-                respectively.</li>
-                <li>Use A = UΣV<sup>T</sup> to obtain missing matrix.</li>
-            </ol>
         </div>
     </section>
     <!-- Footer section -->
