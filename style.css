@@ -402,6 +402,9 @@ button {
     border-radius: 50%;
     text-align: center;
 }
+.layer p {
+    font-weight: bold;
+}
 
 .work:hover img {
     transform: scale(1.1);
